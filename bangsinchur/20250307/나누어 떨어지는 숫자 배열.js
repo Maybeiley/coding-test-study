@@ -34,6 +34,7 @@ function solution(arr, divisor) {
   var answer = [];
   for (let i = 0; i < arr.length; i++) {
     if (Number.isInteger(arr[i] / divisor)) {
+      //Number.inInteger() 함수는 파라미터로 입력받은 값이 정수인지 판단합니다.
       answer.push(arr[i]);
     }
   }
