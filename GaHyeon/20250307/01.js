@@ -19,3 +19,26 @@ function solution(n) {
 
 // 아쉬운 점
 // n이 커지면 filter가 비효율적임, 시간초과 및 실패
+
+// 두 번째 알고리즘
+
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i * i <= num; i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+function solution(n) {
+  let answer = 0;
+  for (let i = 2; i <= n; i++) {
+    if (isPrime(i)) {
+      answer++;
+    }
+  }
+  return answer;
+}
+
+//아쉬운 점
+// 효율성 검사에서 실패함, 에라토스테네스의 체를 이용해야함
