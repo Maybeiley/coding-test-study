@@ -20,6 +20,5 @@ function solution(nums) {
       }
     }
   }
-
   return answer;
 }
