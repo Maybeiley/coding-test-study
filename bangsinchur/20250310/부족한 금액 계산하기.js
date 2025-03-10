@@ -19,7 +19,8 @@ function solution(price, money, count) {
 
 //다른 사람 풀이 -가우스 공식
 function solution(price, money, count) {
-    return Math.max(0, price * count * (count + 1) / 2 - money);
+    const tmp = price * count * (count + 1) / 2 - money;
+    return tmp > 0 ? tmp : 0;
 }
 
 
