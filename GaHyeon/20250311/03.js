@@ -5,7 +5,6 @@ function solution(number, n, m) {
   }
   return 0;
 }
-
 // 다른 사람 풀이: 삼항 연산자
 function solution(number, n, m) {
   return number % n === 0 && number % m === 0 ? 1 : 0;
