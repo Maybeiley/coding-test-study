@@ -7,10 +7,6 @@ function solution(s) {
   let str = s.split(' ');
   let result = [];
 
-  for (let i = 0; i < str.length; i++) {
-    str[i] = Number(str[i]);
-  }
-
   result.push(Math.min(...str));
   result.push(Math.max(...str));
 
