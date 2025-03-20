@@ -13,14 +13,6 @@ function solution(num_list) {
 }
 
 // 다른 사람 풀이
-1;
-2;
-3;
-4;
-5;
-6;
-7;
-8;
 function solution(num_list) {
   return Math.max(
     num_list.reduce((p, c, idx) => p + (idx % 2 == 0 ? c : 0), 0),
