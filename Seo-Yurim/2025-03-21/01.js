@@ -15,14 +15,8 @@ A에서 세번째 숫자인 2, B에서 두번째 숫자인 4를 뽑아 곱하여
 */
 
 function solution(A, B) {
-  let sum = 0;
-
   A.sort((a, b) => a - b);
   B.sort((a, b) => b - a);
 
-  for (let i = 0; i < A.length; i++) {
-    sum += A[i] * B[i];
-  }
-
-  return sum;
+  return A.reduce((total, val, i) => total + val * B[i], 0);
 }
