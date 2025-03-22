@@ -10,11 +10,6 @@ function solution(num_list, n) {
 }
 
 // 다른 사람 풀이
-
-2;
-3;
-4;
-5;
 function solution(num_list, n) {
   num_list.unshift(...num_list.splice(n));
   return num_list;
