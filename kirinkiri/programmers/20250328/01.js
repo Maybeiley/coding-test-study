@@ -32,4 +32,4 @@ function solution(my_string, letter) {
   return answer;
 }
 
-// filter((배열안의 요소) => 조건(을 만족한것만 남김))
+// filter((배열안의 요소) => 조건(을 만족한 것을 걸러냄))
